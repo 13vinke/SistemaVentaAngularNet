@@ -31,6 +31,7 @@ export const MY_DATE_FORMATS = {
     { provide: MAT_DATE_FORMATS, useValue: MY_DATE_FORMATS }
   ]
 })
+
 export class HistorialventaComponent implements OnInit {
   formGroup: FormGroup;
   buscarItem: any[] = [
@@ -52,7 +53,7 @@ export class HistorialventaComponent implements OnInit {
 
     this.formGroup = this.fb.group({
       buscarPor: ['fecha'],
-      numero:[''],
+      numero: [''],
       fechaInicio: [''],
       fechaFin: ['']
     })
@@ -121,3 +122,5 @@ export class HistorialventaComponent implements OnInit {
     })
   }
 }
+
+  
