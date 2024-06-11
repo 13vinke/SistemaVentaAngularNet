@@ -53,9 +53,13 @@ export class HistorialventaComponent implements OnInit {
 
     this.formGroup = this.fb.group({
       buscarPor: ['fecha'],
-      numero: [''],
       fechaInicio: [''],
       fechaFin: ['']
+    })
+
+    this.formGroup = this.fb.group({
+      buscarPor: ['numero'],
+      numero: [''],
     })
 
     this.formGroup.get('buscarPor')?.valueChanges.subscribe(value => {
